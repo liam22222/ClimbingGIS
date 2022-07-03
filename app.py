@@ -1,6 +1,5 @@
 from flask import Flask, request, render_template
 from geojson import Point
-from bson.json_util import dumps
 from flask_bootstrap import Bootstrap
 from flask_login import LoginManager, UserMixin, login_user, login_required, logout_user, current_user
 from flask_wtf import FlaskForm
@@ -10,13 +9,27 @@ from flask_sqlalchemy  import SQLAlchemy
 from werkzeug.security import generate_password_hash, check_password_hash
 import json
 import email_validator
+from sqlalchemy import create_engine, MetaData, Table, Column, Integer, String
+
+engine = create_engine('sqlite:///database.db')
+meta = MetaData()
+
+user_table = Table(
+   'user', meta,
+   Column('id', String),
+   Column('username', String, primary_key = True),
+   Column('email', String),
+   Column('password', String),
+)
+meta.create_all(engine)
+
+
 
 app = Flask(__name__)
 bootstrap = Bootstrap(app)
 app.config['SECRET_KEY'] = 'Thisissupposedtobesecret!'
-app.config["MONGO_URI"] = "mongodb://localhost:27017/linodeStreetTrees"
 my_path = 'linodeStreetTrees.geojson'
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:////mnt/c/Users/antho/Documents/login-example/database.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///database.db'
 db = SQLAlchemy(app)
 login_manager = LoginManager()
 login_manager.init_app(app)
@@ -53,9 +66,15 @@ def login():
     form = LoginForm()
 
     if form.validate_on_submit():
+        print('im_here')
         user = User.query.filter_by(username=form.username.data).first()
+        print(f'my user {user}')
+        ans = User.query.filter_by()
+        print(ans)
         if user:
+            print('im_here2')
             if check_password_hash(user.password, form.password.data):
+                print('im_here3')
                 login_user(user, remember=form.remember.data)
                 return redirect(url_for('dashboard'))
 
@@ -74,7 +93,7 @@ def signup():
         db.session.add(new_user)
         db.session.commit()
 
-        return '<h1>New user has been created!</h1>'
+        return redirect(url_for('/'))
         #return '<h1>' + form.username.data + ' ' + form.email.data + ' ' + form.password.data + '</h1>'
 
     return render_template('signup.html', form=form)
