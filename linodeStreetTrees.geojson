@@ -1,0 +1,137 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Gita",
+        "color": "#3001CE"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.26886,
+          32.932623
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Yonim",
+        "color": "#3001CE"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.217662,
+          32.923456
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Zikhron",
+        "color": "#3001CE"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.967723,
+          32.554916
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kisra",
+        "color": "#3001CE"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.298227,
+          32.97335
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Beit Oren",
+        "color": "#3001CE"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.016539,
+          32.727409
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Timna",
+        "color": "#3001CE"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.957315,
+          29.771157
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nezer Cave",
+        "color": "#3001CE"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.543432,
+          33.172617
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Shilat",
+        "color": "#3001CE"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.985297,
+          31.900992
+        ]
+      }
+    },
+    {"type": "Feature", "properties": {"name": "Technion Crag", "color": "#3001CE"}, "geometry": {"type": "Point", "coordinates": [35.013406, 32.778895]}},
+{"type": "Feature", "properties": {"name": "Mearat Hanezirim", "color": "#3001CE"}, "geometry": {"type": "Point", "coordinates": [34.972004, 31.926599]}},
+{"type": "Feature", "properties": {"name": "Kebara Crag", "color": "#3001CE"}, "geometry": {"type": "Point", "coordinates": [34.937115, 32.563702]}},
+{"type": "Feature", "properties": {"name": "Gilboa Gefet Cliff", "color": "#3001CE"}, "geometry": {"type": "Point", "coordinates": [35.418005, 32.494922]}},
+{"type": "Feature", "properties": {"name": "Dalton", "color": "#3001CE"}, "geometry": {"type": "Point", "coordinates": [35.510623, 33.006648]}},
+{"type": "Feature", "properties": {"name": "Vanishing Cliff", "color": "#3001CE"}, "geometry": {"type": "Point", "coordinates": [35.563688, 33.190917]}},
+{"type": "Feature", "properties": {"name": "Haavot Crag", "color": "#3001CE"}, "geometry": {"type": "Point", "coordinates": [35.136093, 31.670552]}},
+{"type": "Feature", "properties": {"name": "The Oaks Crag", "color": "#3001CE"}, "geometry": {"type": "Point", "coordinates": [35.555121, 33.163927]}},
+{"type": "Feature", "properties": {"name": "המצוק הנעלם", "color": "#3001CE"}, "geometry": {"type": "Point", "coordinates": [35.564353, 33.190863]}},
+{"type": "Feature", "properties": {"name": "Mukhraka", "color": "#3001CE"}, "geometry": {"type": "Point", "coordinates": [35.092049, 32.688636]}},
+{"type": "Feature", "properties": {"name": "Giladi", "color": "#3001CE"}, "geometry": {"type": "Point", "coordinates": [35.562015, 33.245148]}},
+{"type": "Feature", "properties": {"name": "Halilim", "color": "#3001CE"}, "geometry": {"type": "Point", "coordinates": [35.16387, 31.804296]}},
+{"type": "Feature", "properties": {"name": "Amir Kra", "color": "#3001CE"}, "geometry": {"type": "Point", "coordinates": [35.548488, 33.197238]}},
+{"type": "Feature", "properties": {"name": "The Oil Crag", "color": "#3001CE"}, "geometry": {"type": "Point", "coordinates": [35.691855, 33.16885]}},
+{"type": "Feature", "properties": {"name": "Ramim Ridge", "color": "#3001CE"}, "geometry": {"type": "Point", "coordinates": [35.549987, 33.192069]}},
+{"type": "Feature", "properties": {"name": "The Grand Crag", "color": "#3001CE"}, "geometry": {"type": "Point", "coordinates": [35.00832, 32.78753]}},
+{"type": "Feature", "properties": {"name": "Ein Carem Cliff", "color": "#3001CE"}, "geometry": {"type": "Point", "coordinates": [35.162687, 31.760666]}},
+{"type": "Feature", "properties": {"name": "Arava Crag", "color": "#3001CE"}, "geometry": {"type": "Point", "coordinates": [35.297003, 30.971132]}},
+{"type": "Feature", "properties": {"name": "Gey Ben Hinom", "color": "#3001CE"}, "geometry": {"type": "Point", "coordinates": [35.286884, 31.765537]}},
+{"type": "Feature", "properties": {"name": "Nir", "color": "#3001CE"}, "geometry": {"type": "Point", "coordinates": [35.550427, 33.187313]}}
+  ]
+}
