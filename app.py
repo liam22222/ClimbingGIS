@@ -10,7 +10,7 @@ from werkzeug.security import generate_password_hash, check_password_hash
 import json
 import email_validator
 from sqlalchemy import create_engine, MetaData, Table, Column, Integer, String
-
+import geocoder
 engine = create_engine('sqlite:///database.db')
 meta = MetaData()
 
@@ -114,8 +114,8 @@ def logout():
 def maps():
     with open(my_path) as file:
         street_trees_points = json.load(file)
-        print(street_trees_points)
-        return render_template('template.html', street_trees_points=street_trees_points)
+        my_cords = geocoder.ip('me').latlng
+        return render_template('template.html', street_trees_points=street_trees_points, my_cords=my_cords)
 
 if __name__ == '__main__':
     app.debug=False

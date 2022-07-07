@@ -27,7 +27,7 @@
             map.addControl(new mapboxgl.NavigationControl());
 
             var mongoData = JSON.parse('{{ street_trees_points| tojson | safe }}');
-            console.log(mongoData)
+            var myCords = {{my_cords}}
             // Next, we can add markers to the map
             mongoData.features.forEach(function(point) {
                 var elem = document.createElement('div');
@@ -44,7 +44,7 @@
                 var crag_dashboard_elem = '<a href="' + base_link +'">🔗Link</a>'
                 var crag_photos_elem = '<a href="' + base_link +'/photos">📷Pics</a>'
                 var crag_routes_elem = '<a href="' + base_link +'/routelist">⛰️Routes</a>'
-                var waze_nav_elem = '<a href="https://waze.com/ul?ll=' + coords[1] + ',' + coords[0] + '&navigate=yes">🚗Waze</a>'
+                var waze_nav_elem = '<a href="https://waze.com/ul?from=' + myCords[0] + ',' + myCords[1] + '&ll=' + coords[1] + ',' + coords[0] + '&navigate=yes">🚗Waze</a>'
 
                 marker.setLngLat(coords);
                 marker.setPopup(new mapboxgl.Popup().setHTML(
