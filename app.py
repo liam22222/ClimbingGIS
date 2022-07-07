@@ -12,6 +12,7 @@ import pathlib
 
 DB_PATH = f'sqlite:///{pathlib.Path("database.db").resolve()}'
 engine = create_engine(DB_PATH)
+
 meta = MetaData()
 
 user_table = Table(
@@ -117,8 +118,8 @@ def logout():
 def maps():
     with open(my_path) as file:
         street_trees_points = json.load(file)
-        print(street_trees_points)
-        return render_template('template.html', street_trees_points=street_trees_points)
+        my_cords = geocoder.ip('me').latlng
+        return render_template('template.html', street_trees_points=street_trees_points, my_cords=my_cords)
 
 
 if __name__ == '__main__':
